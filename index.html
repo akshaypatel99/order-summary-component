@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Frontend Mentor | Order summary card</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<picture class="main__bg">
+				<source
+					media="(min-width: 475px)"
+					srcset="images/pattern-background-desktop.svg"
+				/>
+				<img
+					src="images/pattern-background-mobile.svg"
+					alt="background image"
+				/>
+			</picture>
+			<article class="card__container">
+				<img
+					src="./images/illustration-hero.svg"
+					alt="Woman listening to walkman"
+					class="card__image"
+				/>
+				<div class="card__content">
+					<h1 class="card__title">Order Summary</h1>
+					<p class="card__description">
+						You can now listen to millions of songs, audiobooks, and podcasts on
+						any device anywhere you like!
+					</p>
+					<div class="card__product">
+						<div class="product">
+							<img
+								src="./images/icon-music.svg"
+								alt="Music icon"
+								class="product-icon"
+							/>
+							<div class="product-description">
+								<h2>Annual Plan</h2>
+								<p>$59.99/year</p>
+							</div>
+						</div>
+						<a href="#" class="change">Change</a>
+					</div>
+					<a href="#" class="payment">Proceed to Payment</a>
+					<a href="#" class="cancel">Cancel Order</a>
+				</div>
+			</article>
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://www.akshaypatel.dev">Akshay Patel</a>.
+		</footer>
+	</body>
+</html>
