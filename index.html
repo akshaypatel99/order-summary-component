@@ -9,21 +9,19 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+			href="./images/favicon-32x32.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Frontend Mentor | Order summary card</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			.attribution {
-				font-size: 11px;
+				font-size: 0.75rem;
 				text-align: center;
 			}
 			.attribution a {
@@ -33,22 +31,11 @@
 	</head>
 	<body>
 		<main>
-			<picture class="main__bg">
-				<source
-					media="(min-width: 475px)"
-					srcset="images/pattern-background-desktop.svg"
-				/>
-				<img
-					src="images/pattern-background-mobile.svg"
-					alt="background image"
-				/>
-			</picture>
-			<article class="card__container">
+			<article class="card">
 				<img
 					src="./images/illustration-hero.svg"
 					alt="Woman listening to walkman"
-					class="card__image"
-				/>
+					class="card__image" />
 				<div class="card__content">
 					<h1 class="card__title">Order Summary</h1>
 					<p class="card__description">
@@ -60,17 +47,16 @@
 							<img
 								src="./images/icon-music.svg"
 								alt="Music icon"
-								class="product-icon"
-							/>
+								class="product-icon" />
 							<div class="product-description">
 								<h2>Annual Plan</h2>
 								<p>$59.99/year</p>
 							</div>
 						</div>
-						<a href="#" class="change">Change</a>
+						<a href="#" class="card__link change">Change</a>
 					</div>
-					<a href="#" class="payment">Proceed to Payment</a>
-					<a href="#" class="cancel">Cancel Order</a>
+					<a href="#" class="card__link payment">Proceed to Payment</a>
+					<a href="#" class="card__link cancel">Cancel Order</a>
 				</div>
 			</article>
 		</main>
